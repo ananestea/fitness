@@ -3,31 +3,45 @@
 
 // Default
 
-$color-default-black:               #000000;
-$color-default-white:               #ffffff;
-$color-transparent:                 rgba(255, 255, 255, 0);
+$color-default-black:#000000;
+$color-default-white:#ffffff;
+$color-transparent:rgba(255, 255, 255, 0);
+
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+$sapphiret:#102654;
+$egyptian-blue: #103aae;
+$whisper: #e8e8e8;
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+
+$resolution-blue: #1C3374; //bg
+$ghost-white: #f8f9fc; //bg
+$torch-red: #ed0233; //bg
+$black-russian: #030a1a; //bg
 
 // Gradient
 
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$red-to-blue: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$text-red-blue: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+$button-red-blue: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
 
 // Typography
 // ---------------------------------
+$alumni: "Alumni Sans", "Arial", sans-serif;
+$roboto: "Roboto Condensed", "Arial", sans-serif;
 
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
+$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+
+
 
 // Animation
 // ---------------------------------
@@ -36,23 +50,30 @@ $tf-default:                        ease;
 $trans-default:                     0.3s $tf-default;
 
 // если требуется изинг отличный от $tf-default, то переменную называем не цифрой
-$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+$trans-modal: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 
-$trans-600:                         0.6s $tf-default;
+$trans-600: 0.6s $tf-default;
 
 // Viewports
 // ---------------------------------
 
-$vp-320:                            320px;
-$vp-375:                            375px;
-$vp-768:                            768px;
-$vp-1024:                           1024px;
-$vp-1280:                           1280px;
-$vp-1440:                           1440px;
-$vp-1920:                           1920px;
+$vp-320: 320px;
+$vp-375: 375px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1280: 1280px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;
 
 // Retina
 // ---------------------------------
 
 $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
+
+// Width
+// ---------------------------------
+
+$desktop-width: 1200px;
+$tablet-width: 1199px;
+$mobile-width: 767px;
