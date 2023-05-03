@@ -660,7 +660,7 @@
                       </picture>
                     </div>
                     <div class="feedback__description">
-                      <h3>Никита Русских</h3>
+                      <h3>Никита Нерусских</h3>
                       <p>&laquo;Всегда любил спорт... За&nbsp;исключением тех моментов, когда не&nbsp;любил&raquo;</p>
                     </div>
                   </li>
@@ -674,50 +674,52 @@
         </section>
 
         <div class="page-wrapper">
-          <section class="form">
-            <div class="form__wrapper" data-form-validate data-callback="base">
-              <h2>Бесплатное занятие </h2>
-              <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-                  <div class="form__input form__input--username">
-                    <label for="username" data-validate-type="text" data-required
-                      data-message-base="Поле обязательно к заполнению">
-                      <input type="text" name="username" id="username" placeholder="Имя" required>
-                    </label>
+            <section class="form">
+              <div class="form__wrapper" data-form-validate data-callback="base">
+                <h2>Бесплатное занятие</h2>
+                <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                  <div class="form__input-wrapper">
+                    <div class="form__input form__input--username">
+                      <label for="username" data-validate-type="text" data-required
+                        data-message-base="Поле обязательно к заполнению">
+                        <input type="text" name="username" id="username" placeholder="Имя" required>
+                      </label>
+                    </div>
+                    <div class="form__input form__input--userphone">
+                      <label for="phone" data-validate-type="phone" data-required
+                        data-message-base="Поле обязательно к заполнению">
+                        <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                      </label>
+                    </div>
+                    <button class="form__input form__input--button" type="submit">отправить</button>
                   </div>
-                  <div class="form__input form__input--userphone">
-                    <label for="phone" data-validate-type="phone" data-required
-                      data-message-base="Поле обязательно к заполнению">
-                      <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
-                    </label>
-                  </div>
-                  <button class="form__input form__input--button" type="submit">отправить</button>
-              </form>
-            </div>
-          </section>
+                </form>
+              </div>
+            </section>
 
-          <section class="contacts">
-            <h2>Контакты</h2>
-            <div class="contacts__wrapper">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <h3>Адрес:</h3>
-                  <address>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</address>
-                </li>
-                <li class="contacts__item">
-                  <h3>Телефон:</h3>
-                  <a href="tel:88005555555">8-800-555-55-55</a>
-                </li>
-                <li class="contacts__item">
-                  <h3>График работы:</h3>
-                  <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
-                </li>
-                <li class="contacts__item">
-                  <h3>Email:</h3>
-                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                </li>
-              </ul>
-            </div>
-          </section>
+            <section class="contacts">
+              <h2>Контакты</h2>
+              <div class="contacts__wrapper">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <h3>Адрес:</h3>
+                    <address>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</address>
+                  </li>
+                  <li class="contacts__item">
+                    <h3>Телефон:</h3>
+                    <a href="tel:88005555555">8-800-555-55-55</a>
+                  </li>
+                  <li class="contacts__item">
+                    <h3>График работы:</h3>
+                    <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                  </li>
+                  <li class="contacts__item">
+                    <h3>Email:</h3>
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
         </div>
       </main>
     </div>
@@ -726,7 +728,7 @@
       <section class="about-us">
         <h2 class="about-us__title visually-hidden">О нас</h2>
         <div class="about-us-container">
-          <a class="navigation__logo" href="index.html" aria-label="SUPERGYM - Фитнес центр">
+          <a class="about-us__logo" href="index.html" aria-label="SUPERGYM - Фитнес центр">
             <svg aria-hidden="true" focusable="false" width="88" height="32">
               <use xlink:href="./img/sprite.svg#logo"></use>
             </svg>

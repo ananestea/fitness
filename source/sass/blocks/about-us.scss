@@ -1,0 +1,53 @@
+.about-us {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1270px;
+  padding: 50px;
+  color: $color-default-white;
+
+
+  @media (max-width: $tablet-width) {
+    padding: 45px;
+    padding-top: 41px;
+    padding-right: 37px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 15px;
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+}
+
+
+.about-us__logo {
+  color: $color-default-white;
+  margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    svg {
+      width: 82px;
+      height: 18px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    position: absolute;
+    svg {
+      width: 68px;
+      height: 15px;
+    }
+  }
+}
+
+.about-us-container {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    position: relative;
+    align-items: normal;
+  }
+}

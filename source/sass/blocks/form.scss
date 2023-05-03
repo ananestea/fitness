@@ -1,0 +1,68 @@
+.form {
+  place-self: stretch end;;
+  color: $color-default-white;
+  background-color: $sapphiret;
+  padding: 55px 170px;
+  padding-left: 100vw;
+  padding-bottom: 69px;
+}
+
+.form__wrapper {
+  width: 410px;
+  h2 {
+    margin: 0;
+    font-family: $alumni;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 84px;
+    letter-spacing: 0.03em;
+    color: $color-default-white;
+  }
+}
+
+.form__input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form__input {
+  input {
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    background-color: transparent;
+    padding: 5px;
+    color: $color-default-white;
+    border: none;
+    border-bottom: 1px solid #74819c;
+
+    &::placeholder {
+      font-family: $roboto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-default-white;
+    }
+  }
+
+  &--button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    grid-column: 1/-1;
+    background-color: $sapphiret;
+    color: $color-default-white;
+    border: 3px solid $color-default-white;
+    padding: 17px 0 16px;
+    margin: -3px -2px 0;
+    user-select: none;
+    cursor: pointer;
+  }
+}
