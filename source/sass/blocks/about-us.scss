@@ -19,7 +19,6 @@
   }
 }
 
-
 .about-us__logo {
   color: $color-default-white;
   margin-right: auto;
@@ -34,6 +33,7 @@
   @media (max-width: $mobile-width) {
     margin: 0;
     position: absolute;
+
     svg {
       width: 68px;
       height: 15px;

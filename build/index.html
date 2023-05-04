@@ -12,10 +12,12 @@
     <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicons/apple.jpg">
     <link rel="manifest" href="./img/favicons/manifest.webmanifest">
-    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts//montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts//montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans-extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div class="page">
@@ -230,7 +232,7 @@
                     <p>Дневной</p>
                     <p>с&nbsp;8:00 до&nbsp;17:00</p>
                     <p>8&nbsp;300
-                      <svgclass="tabs__icon" aria-hidden="true" focusable="false" width="30" height="42">
+                      <svg class="tabs__icon" aria-hidden="true" focusable="false" width="30" height="42">
                         <use xlink:href="img/sprite.svg#rouble-icon"></use>
                       </svg>
                     </p>
@@ -243,7 +245,7 @@
                     <p>Полный день</p>
                     <p>с&nbsp;8:00 до&nbsp;22:00</p>
                     <p>14&nbsp;300
-                      <svg cclass="tabs__icon" aria-hidden="true" focusable="false" width="30" height="42">
+                      <svg class="tabs__icon" aria-hidden="true" focusable="false" width="30" height="42">
                         <use xlink:href="img/sprite.svg#rouble-icon"></use>
                       </svg>
                     </p>
@@ -291,7 +293,7 @@
                     srcset="./img/promo/promo-image-mobile.webp 1x, ./img/promo/promo-image-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="./img/promo/promo-image-tablet.webp 1x, ./img/promo/promo-image-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/promo/promo-image.webp 1x, ./img/promo/promo-image@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/promo/promo-image-desktop.webp 1x, ./img/promo/promo-image-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)"
                     srcset="./img/promo/promo-image-mobile.jpg 1x, ./img/promo/promo-image-mobile@2x.jpg 2x">
                   <source media="(max-width: 1199px)"
@@ -384,12 +386,8 @@
                   <li class="staff__item swiper-slide" tabindex="0">
                     <div class="staff__image">
                       <picture>
-                        <source type="image/webp" media="(max-width: 1199px)"
-                          srcset="./img/staff/staff-image-4-tablet.webp 1x, ./img/staff/staff-image-4-tablet@2x.webp 2x">
                         <source type="image/webp"
                           srcset="./img/staff/staff-image-4.webp 1x, ./img/staff/staff-image-4@2x.webp 2x">
-                        <source media="(max-width: 1199px)"
-                          srcset="./img/staff/staff-image-4-tablet.jpg 1x, ./img/staff/staff-image-4-tablet@2x.jpg 2x">
                         <img src="./img/staff/staff-image-4.jpg" srcset="./img/staff/staff-image-4@2x.jpg 2x" width="260"
                           height="294" alt="Фото Марии Кетовой.">
                       </picture>
@@ -674,6 +672,7 @@
         </section>
 
         <div class="page-wrapper">
+          <div class="page-wrapper__container">
             <section class="form">
               <div class="form__wrapper" data-form-validate data-callback="base">
                 <h2>Бесплатное занятие</h2>
@@ -720,6 +719,7 @@
                 </ul>
               </div>
             </section>
+          </div>
         </div>
       </main>
     </div>

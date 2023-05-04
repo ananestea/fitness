@@ -1,0 +1,30 @@
+.main-header {
+  width: 100%;
+  color: $color-default-white;
+  background: $red-to-blue;
+
+  @media (max-width: $tablet-width) {
+    min-height: 100px;
+  }
+
+  // @media (max-width: $mobile-width) {
+  //   min-height: 70px;
+  // }
+}
+
+.main-header-wrapper {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1260px;
+  padding: 30px 50px 50px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 26px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 20px 15px 20px 16px;
+  }
+}

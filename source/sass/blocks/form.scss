@@ -1,14 +1,15 @@
 .form {
-  place-self: stretch end;;
+  place-self: stretch end;
   color: $color-default-white;
   background-color: $sapphiret;
   padding: 55px 170px;
-  padding-left: 100vw;
+  padding-left: 0;
   padding-bottom: 69px;
 }
 
 .form__wrapper {
   width: 410px;
+
   h2 {
     margin: 0;
     font-family: $alumni;
@@ -37,6 +38,7 @@
     width: 100%;
     background-color: transparent;
     padding: 5px;
+    padding-left: 0;
     color: $color-default-white;
     border: none;
     border-bottom: 1px solid #74819c;
@@ -48,21 +50,46 @@
       line-height: 16px;
       color: $color-default-white;
     }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background: $text-red-blue;
+    }
+
+    &:active,
+    &:focus-within {
+      outline: none;
+      background: $red-to-blue;
+    }
   }
 
   &--button {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     grid-column: 1/-1;
     background-color: $sapphiret;
     color: $color-default-white;
     border: 3px solid $color-default-white;
     padding: 17px 0 16px;
-    margin: -3px -2px 0;
+    margin: 0;
+    margin-top: -3px;
     user-select: none;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background: $text-red-blue;
+    }
+
+    &:active,
+    &:focus-within {
+      outline: none;
+      background: $red-to-blue;
+    }
   }
 }
