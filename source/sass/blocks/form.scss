@@ -5,6 +5,11 @@
   padding: 55px 170px;
   padding-left: 0;
   padding-bottom: 69px;
+
+  @media (max-width: $tablet-width) {
+    place-self: normal;
+    padding: 70px 163px 70px 133px;
+  }
 }
 
 .form__wrapper {
@@ -19,6 +24,10 @@
     line-height: 84px;
     letter-spacing: 0.03em;
     color: $color-default-white;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
   }
 }
 

@@ -3,6 +3,14 @@
   grid-auto-flow: dense;
   grid-template-columns: 1fr 1fr;
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 0;
+  }
+
   a {
     color: $color-default-white;
     max-width: 200px;

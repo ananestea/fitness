@@ -11,5 +11,19 @@
     max-width: 1260px;
     margin: 0 auto;
     padding: 0 clamp(45px, 7.5vw, 50px);
+
+    @media (max-width: $tablet-width) {
+      padding: 0;
+      grid-template-columns: 1fr;
+    }
   }
+
+  @media (max-width: $tablet-width) {
+    background: none;
+    border-top: none;
+  }
+
+  // @media (max-width: $mobile-width) {
+  //   margin-bottom: 0;
+  // }
 }

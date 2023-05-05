@@ -5,11 +5,12 @@
 
   @media (max-width: $tablet-width) {
     min-height: 100px;
+    background: $red-to-blue-tablet;
   }
 
-  // @media (max-width: $mobile-width) {
-  //   min-height: 70px;
-  // }
+  @media (max-width: $mobile-width) {
+    background: $red-to-blue-mobile;
+  }
 }
 
 .main-header-wrapper {
@@ -21,10 +22,11 @@
   @media (max-width: $tablet-width) {
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 26px;
+    padding-top: 35px;
+    padding-bottom: 82px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 20px 15px 20px 16px;
+    padding: 15px 15px 101px 15px;
   }
 }

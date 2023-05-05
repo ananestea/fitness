@@ -2,9 +2,13 @@
   place-self: stretch start;
   color: $sapphiret;
   padding-right: 0;
-  padding-top: 45px;
-  padding-left: 120px;
-  padding-bottom: 50px;
+  padding: 57px 0 63px 124px;
+
+  @media (max-width: $tablet-width) {
+    padding: 70px 0 70px 0;
+    margin: 0 auto;
+    place-self: normal;
+  }
 
 
   h2 {
@@ -78,3 +82,7 @@
     display: inline-block;
   }
 }
+
+// .contacts__wrapper {
+//   margin: 0 auto;
+// }
