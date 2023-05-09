@@ -8,9 +8,9 @@
     <title>SUPERGYM - Фитнес центр</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="./img/favicons/favicon.ico">
-    <link rel="icon" type="image/jpg" sizes="32x32" href="./img/favicons/32.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/32.png">
     <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./img/favicons/apple.jpg">
+    <link rel="apple-touch-icon" href="./img/favicons/apple.png">
     <link rel="manifest" href="./img/favicons/manifest.webmanifest">
     <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -48,7 +48,7 @@
                   Кардио-зона
                 </li>
               </ul>
-              <a class="hero__button" href="#catalog">Купить абонемент</a>
+              <a class="hero__button" href="#tabs">Купить абонемент</a>
             </div>
 
             <div class="hero__image">
@@ -76,7 +76,7 @@
               <h2>Тренажерный зал</h2>
               <h3>Просторный зал площадью 900&nbsp;кв/м</h3>
               <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-              <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+              <p>В&nbsp;зале расположены отдельная зона для Crossfit&nbsp;и кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
             </div>
             <div class="place__image-wrapper">
               <div class="place__image">
@@ -91,30 +91,30 @@
                 </picture>
               </div>
               <div class="place__video video">
-                <div class="video__image">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/place/video-image-mobile.webp 1x, ./img/place/video-image-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1023px)" srcset="./img/place/video-image-tablet.webp 1x, ./img/place/video-image-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="./img/place/video-image-desktop.webp 1x, ./img/place/video-image-desktop@2x.webp 2x">
+                <div class="video__container" data-src="https://www.youtube.com/embed/9TZXsZItgdw">
+                  <div class="video__image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/place/video-image-mobile.webp 1x, ./img/place/video-image-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="./img/place/video-image-tablet.webp 1x, ./img/place/video-image-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="./img/place/video-image-desktop.webp 1x, ./img/place/video-image-desktop@2x.webp 2x">
 
-                    <source media="(max-width: 767px)" srcset="./img/place/video-image-mobile.jpg 1x, ./img/place/video-image-mobile@2x.jpg 2x">
-                    <source media="(max-width: 1023px)" srcset="./img/place/video-image-tablet.jpg 1x, ./img/place/video-image-tablet@2x.jpg 2x">
-                    <img src="./img/place/video-image-desktop.jpg" srcset="./img/place/video-image-desktop@2x.jpg 2x" width="364" height="228" alt="Видео с нашим залом">
-                  </picture>
-                </div>
-                <button class="video__button" aria-label="Включить видео">
-                  <svg class="video__icon" width="17" height="17">
-                    <use href="./img/sprite.svg#icon-video-play"></use>
-                  </svg>
-                </button>
-                <div class="video__container" data-video-container data-src="https://www.youtube.com/embed/9TZXsZItgdw">
+                      <source media="(max-width: 767px)" srcset="./img/place/video-image-mobile.jpg 1x, ./img/place/video-image-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="./img/place/video-image-tablet.jpg 1x, ./img/place/video-image-tablet@2x.jpg 2x">
+                      <img src="./img/place/video-image-desktop.jpg" srcset="./img/place/video-image-desktop@2x.jpg 2x" width="364" height="228" alt="Видео с нашим залом">
+                    </picture>
+                  </div>
+                  <button class="video__button" aria-label="Включить видео">
+                    <svg class="video__icon" width="17" height="17">
+                      <use href="./img/sprite.svg#icon-video-play"></use>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="catalog tabs" data-tabs="parent" id="catalog">
+        <section class="tabs tabs" data-tabs="parent" id="tabs">
           <div class="tabs__wrapper">
             <h2>Абонементы</h2>
             <div class="tabs__controls" data-tabs="controls">
@@ -157,7 +157,7 @@
                     <p>Полный день</p>
                     <p>с&nbsp;8:00 до&nbsp;22:00</p>
                     <p>2&nbsp;700
-                      <svg class="catalog__rouble-icon" width="30" height="42">
+                      <svg class="tabs__rouble-icon" width="30" height="42">
                         <use xlink:href="img/sprite.svg#rouble-icon"></use>
                       </svg>
                     </p>
@@ -258,16 +258,16 @@
               </li>
             </ul>
           </div>
-          <div class="catalog__image">
+          <div class="tabs__image">
             <picture>
               <source type="image/webp" media="(max-width: 1199px)"
-                srcset="./img/catalog/catalog-image-tablet.webp 1x, ./img/catalog/catalog-image-tablet@2x.webp 2x">
+                srcset="./img/tabs/tabs-image-tablet.webp 1x, ./img/tabs/tabs-image-tablet@2x.webp 2x">
               <source type="image/webp"
-                srcset="./img/catalog/catalog-image-desktop.webp 1x, ./img/catalog/catalog-image-desktop@2x.webp 2x">
+                srcset="./img/tabs/tabs-image-desktop.webp 1x, ./img/tabs/tabs-image-desktop@2x.webp 2x">
 
               <source media="(max-width: 1199px)"
-                srcset="./img/catalog/catalog-image-tablet.png 1x, ./img/catalog/catalog-image-tablet@2x.png 2x">
-              <img src="./img/catalog/catalog-image-desktop.png" srcset="./img/catalog/catalog-image-desktop@2x.png 2x" width="287"
+                srcset="./img/tabs/tabs-image-tablet.png 1x, ./img/tabs/tabs-image-tablet@2x.png 2x">
+              <img src="./img/tabs/tabs-image-desktop.png" srcset="./img/tabs/tabs-image-desktop@2x.png 2x" width="287"
                 height="494" alt="Блины.">
             </picture>
           </div>
@@ -747,7 +747,7 @@
                 <a class="menu__link" href="#">Услуги</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#catalog">Абонементы</a>
+                <a class="menu__link" href="#tabs">Абонементы</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#commercial">Акции</a>

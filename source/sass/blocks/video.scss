@@ -1,0 +1,104 @@
+.video {
+  width: 364px;
+  height: 228px;
+  position: absolute;
+  bottom: -28.6%;
+  left: -9.5%;
+
+  @media (max-width: $tablet-width) {
+    width: 39.2%;
+    height: 48.7%;
+    bottom: -23.8%;
+    left: 30.4%;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+.video__container {
+  position: relative;
+
+  iframe {
+    width: 364px;
+    height: 228px;
+    border: none;
+  }
+}
+
+.video__button {
+  top: 35%;
+  left: 40%;
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-image: $video-button;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 120% 120%;
+  border: 0;
+  cursor: pointer;
+  z-index: 2;
+
+  svg {
+    margin-left: 9%;
+    height: 14px;
+  }
+
+  &::after {
+    position: absolute;
+    top: -19%;
+    left: -20%;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/svg/video-circle.svg");
+    background-position: center;
+    background-size: contain;
+    content: "";
+    z-index: 1;
+  }
+
+
+  @media (max-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+
+    &::after {
+      position: absolute;
+      top: -19%;
+      left: -20%;
+      content: "";
+      width: 73px;
+      height: 73px;
+      background-image: url("../img/svg/video-circle.svg");
+      background-position: center;
+      background-size: contain;
+      content: "";
+      z-index: 1;
+    }
+
+    svg {
+      margin-left: 6%;
+      height: 10px;
+    }
+  }
+}
+
+.video__image {
+  @media (max-width: $mobile-width) {
+    img {
+      width: 100%;
+    }
+  }
+}

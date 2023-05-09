@@ -45,3 +45,58 @@
   visibility: visible;
   opacity: 1;
 }
+
+[data-tabs="control"].is-active {
+  border-bottom: 2px solid #d10a42;
+  color: $sapphiret;
+}
+
+.tabs {
+  width: 100%;
+  background-color: $ghost-white;
+}
+
+.tabs__wrapper {
+  margin: 0 auto;
+  max-width: 1270px;
+  padding: 120px 50px;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    font-family: $alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+    margin-left: -5px;
+  }
+}
+
+.tabs__controls {
+  width: 341px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(3,-webkit-min-content);
+  grid-template-columns: repeat(3,min-content);
+  column-gap: 47px;
+  row-gap: 30px;
+  margin: 0 auto 53px;
+  box-shadow: 0 -2px rgba(116,129,156,0.2) inset;
+}
+
+.tabs__button {
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: transparent;
+  color: rgba(16,38,84,0.5);
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0;
+  padding-bottom: 11px;
+  user-select: none;
+  cursor: pointer;
+}
