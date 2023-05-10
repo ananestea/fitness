@@ -25,6 +25,9 @@
   padding: 0;
   list-style-type: none;
   height: 100%;
+  display: grid;
+  padding: 0;
+  grid-auto-flow: column;
 
   height: 294px;
   transform: translate3d(0px, 0px, 0px);
@@ -68,7 +71,12 @@
   height: 294px;
 }
 
-// .staff__swiper {
-//   box-sizing: content-box;
-//   max-width: 1160px;
-// }
+.staff__swiper {
+  box-sizing: content-box;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 56px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  max-width: 1160px;
+}

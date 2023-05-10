@@ -620,7 +620,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   display: flex;
   bottom: 0;
   height: 100%;
-  width: 25px;
+  width: 26px;
   content: "";
   background-color: #fff;
   color: #74819c;
@@ -639,6 +639,10 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
       -ms-transform: scale(-1, 1);
           transform: scale(-1, 1);
   right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
 }
 
 @font-face {
@@ -3295,6 +3299,10 @@ button,
   padding: 0;
   list-style-type: none;
   height: 100%;
+  display: -ms-grid;
+  display: grid;
+  padding: 0;
+  grid-auto-flow: column;
   height: 294px;
   -webkit-transform: translate3d(0px, 0px, 0px);
           transform: translate3d(0px, 0px, 0px);
@@ -3335,6 +3343,16 @@ button,
 
 .staff__content {
   height: 294px;
+}
+
+.staff__swiper {
+  box-sizing: content-box;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 56px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  max-width: 1160px;
 }
 
 /* @mixin hover-focus {
