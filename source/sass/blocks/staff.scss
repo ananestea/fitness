@@ -1,0 +1,74 @@
+.staff {
+  width: 100%;
+}
+
+.staff__container {
+  max-width: 1272px;
+  padding: 0 0px 30px;
+  margin: 0 auto;
+
+  h2 {
+    margin: 0;
+    font-family: $alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    color: $sapphiret;
+    padding-left: 60px;
+    margin-bottom: 48px;
+  }
+}
+
+.staff__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 100%;
+
+  height: 294px;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.staff__description {
+  display: none;
+}
+
+.staff__item {
+  width: 260px;
+}
+
+.staff__description-wrapper {
+  padding: 30px 77px;
+  position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 52px 48px 22px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: transparent;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    /* transition: background-color .3s ease; */
+}
+
+
+.staff__content {
+  height: 294px;
+}
+
+// .staff__swiper {
+//   box-sizing: content-box;
+//   max-width: 1160px;
+// }
