@@ -14,16 +14,23 @@
 
   @media (max-width: $mobile-width) {
     padding: 15px;
-    padding-top: 40px;
+    padding-top: 48px;
     padding-bottom: 24px;
+    padding-bottom: 51px;
   }
 }
 
 .about-us__logo {
   color: $color-default-white;
-  margin-right: auto;
+  margin-right: 278px;
+  margin-left: 5px;
+  margin-top: -6px;
 
   @media (max-width: $tablet-width) {
+    margin-right: 62px;
+    margin-top: 8px;
+    margin-left: 0;
+
     svg {
       width: 82px;
       height: 18px;

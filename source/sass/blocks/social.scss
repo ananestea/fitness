@@ -1,6 +1,11 @@
 
 .social {
   margin-left: auto;
+  margin-top: -23px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
 
   @media (max-width: $mobile-width) {
     margin-left: 0;
@@ -13,7 +18,7 @@
   margin: 0;
   display: grid;
   grid-template-columns: repeat(3, max-content);
-  gap: 7px;
+  gap: 2px;
   row-gap: 2px;
 
   @media (max-width: $tablet-width) {
@@ -21,7 +26,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    gap: 22px;
+    gap: 11px;
   }
 }
 
@@ -29,7 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
 
   @media (max-width: $mobile-width) {
     padding: 0;

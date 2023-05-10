@@ -2,24 +2,45 @@
   place-self: stretch start;
   color: $sapphiret;
   padding-right: 0;
-  padding: 57px 0 63px 124px;
-
-  @media (max-width: $tablet-width) {
-    padding: 70px 0 70px 0;
-    margin: 0 auto;
-    place-self: normal;
-  }
-
+  padding: 57px 0 63px 121px;
 
   h2 {
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 36px;
     font-family: $alumni;
     font-style: normal;
     font-weight: 600;
     font-size: 54px;
     line-height: 65px;
     letter-spacing: 0.03em;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 63px 133px;
+    margin: 0 auto;
+    place-self: normal;
+    margin: 0 auto;
+    width: 100%;
+
+    h2 {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 31px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 63px 15px;
+    margin: 0 auto;
+    place-self: normal;
+    margin: 0 auto;
+    width: 100%;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -32,6 +53,7 @@
   row-gap: 18px;
   column-gap: 121px;
   position: relative;
+  padding-left: 3px;
 
   &::before {
     position: absolute;
@@ -40,11 +62,33 @@
     height: 90%;
     background-color: $light-slate-grey;
     top: 6px;
-    left: 63%;
+    left: 58%;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    column-gap: 97px;
+    row-gap: 22px;
+
+    &::before {
+      top: 7px;
+      left: 53%;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    row-gap: 21px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
 .contacts__item {
+  max-width: 180px;
+
   h3 {
     font-family: $roboto;
     color: $sapphiret;
@@ -61,6 +105,7 @@
     font-size: 14px;
     line-height: 21px;
     margin: 0;
+    font-style: normal;
   }
 
   p {
@@ -79,10 +124,54 @@
     font-size: 14px;
     line-height: 21px;
     margin: 0;
-    display: inline-block;
+    display: inline-grid;
+  }
+
+
+  @media (max-width: $tablet-width) {
+    max-width: 230px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 4px;
+    }
+
+    address {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    a {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+
+  @media (max-width: $mobile-width) {
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 3;
+    }
+
+    h3 {
+      margin-bottom: 4px;
+    }
+
   }
 }
 
-// .contacts__wrapper {
-//   margin: 0 auto;
-// }
+.contacts__wrapper {
+  @media (max-width: $tablet-width) {
+    max-width: 502px;
+  }
+}

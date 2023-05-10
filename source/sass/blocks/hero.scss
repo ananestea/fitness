@@ -123,6 +123,7 @@
   text-align: center;
   margin-left: 33px;
   margin-bottom: 26px;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     padding: 20px 30px 20px 31px;
@@ -140,12 +141,14 @@
   }
 
   &:hover,
-  &:focus {
-    opacity: 0.8;
+  &:focus-within {
+    outline: none;
+    background: $text-red-blue;
   }
 
   &:active {
-    opacity: 0.5;
+    outline: none;
+    background: $red-to-blue;
   }
 }
 

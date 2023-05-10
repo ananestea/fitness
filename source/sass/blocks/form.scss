@@ -4,11 +4,15 @@
   background-color: $sapphiret;
   padding: 55px 170px;
   padding-left: 0;
-  padding-bottom: 69px;
+  padding-bottom: 71px;
 
   @media (max-width: $tablet-width) {
     place-self: normal;
-    padding: 70px 163px 70px 133px;
+    padding: 63px 163px 70px 133px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 63px 15px 68px;
   }
 }
 
@@ -18,16 +22,32 @@
   h2 {
     margin: 0;
     font-family: $alumni;
-    font-style: normal;
     font-weight: 800;
     font-size: 54px;
     line-height: 84px;
     letter-spacing: 0.03em;
     color: $color-default-white;
+    margin-bottom: 18px;
   }
 
   @media (max-width: $tablet-width) {
     width: 100%;
+
+    h2 {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 31px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 36px;
+    }
   }
 }
 
@@ -35,6 +55,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+
+  @media (max-width: $tablet-width) {
+    gap: 32px;
+    column-gap: 59px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__input {
@@ -66,8 +95,7 @@
       background: $text-red-blue;
     }
 
-    &:active,
-    &:focus-within {
+    &:active {
       outline: none;
       background: $red-to-blue;
     }
@@ -100,5 +128,11 @@
       outline: none;
       background: $red-to-blue;
     }
+
+    @media (max-width: $mobile-width) {
+      margin-top: 10px;
+    }
   }
+
+
 }
