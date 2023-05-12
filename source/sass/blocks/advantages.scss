@@ -6,7 +6,7 @@
 .advantages__wrapper {
   margin: 0 auto;
   max-width: 1140px;
-  padding: 97px 50px;
+  padding: 97px 50px 131px;
 
   h2 {
     margin: 0;
@@ -285,6 +285,7 @@
 
   span {
     background-image: linear-gradient(142.51deg,#d10a42 0,#003eb7 87.33%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;

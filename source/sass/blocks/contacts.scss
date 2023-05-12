@@ -125,6 +125,15 @@
     line-height: 21px;
     margin: 0;
     display: inline-grid;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
 

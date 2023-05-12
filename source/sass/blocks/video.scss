@@ -65,11 +65,21 @@
   border: 0;
   cursor: pointer;
   z-index: 2;
+  user-select: none;
 
   svg {
     margin-left: 9%;
     height: 14px;
   }
+
+  &:hover,
+  &:focus-within {
+    transform: scale(1.1);
+  }
+
+    &:active {
+      opacity: 0.5;
+    }
 
   &::after {
     position: absolute;

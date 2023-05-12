@@ -1,0 +1,112 @@
+.discount__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  @media (max-width: $mobile-width) {
+    // grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr;
+  }
+}
+
+.discount__item {
+  padding: 20px;
+  padding-left: 35px;
+  padding-top: 15px;
+  padding-bottom: 33px;
+  position: relative;
+  color: $resolution-blue;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 7px solid #00359f;
+    border-image: linear-gradient(to right bottom,#d10a42,#00359f);
+    border-image-slice: 1;
+    pointer-events: none;
+  }
+
+  h3 {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 57px;
+    margin: 0;
+  }
+
+  p {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    transform: translate(0, -5px);
+    margin-bottom: 60px;
+  }
+
+  a {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+    color: $color-default-white;
+    width: fit-content;
+    border-bottom: 2px solid $resolution-blue;;
+    color: $resolution-blue;
+
+    &:hover,
+    &:focus-within {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &:first-of-type {
+      padding-right: 65px;
+
+      p {
+        margin-bottom: 36px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+
+    &:first-of-type {
+      padding-right: 33px;
+
+      p {
+        margin-bottom: 15px;
+      }
+    }
+
+    padding: 33px;
+    padding-top: 28px;
+    padding-bottom: 43px;
+    text-align: center;
+    align-items: center;
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}

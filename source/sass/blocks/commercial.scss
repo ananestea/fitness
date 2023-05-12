@@ -1,0 +1,53 @@
+.commercial {
+  width: 100%;
+}
+
+.commercial__wrapper {
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 101px 50px 106px;
+
+  h2 {
+    margin: 0;
+    text-align: center;
+    font-family: $alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    margin-bottom: 33px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 92px 45px 68px;
+
+    h2 {
+      font-size: 42px;
+      line-height: 50px;
+      margin-left: -7px;
+      margin-bottom: 41px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 63px 15px 38px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+      margin-left: -7px;
+      margin-bottom: 41px;
+    }
+  }
+}
+
+.commercial__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
