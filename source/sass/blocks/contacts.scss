@@ -1,7 +1,6 @@
 .contacts {
   place-self: stretch start;
   color: $sapphiret;
-  padding-right: 0;
   padding: 57px 0 63px 121px;
 
   h2 {
@@ -19,7 +18,6 @@
     padding: 63px 133px;
     margin: 0 auto;
     place-self: normal;
-    margin: 0 auto;
     width: 100%;
 
     h2 {
@@ -33,7 +31,6 @@
     padding: 63px 15px;
     margin: 0 auto;
     place-self: normal;
-    margin: 0 auto;
     width: 100%;
 
     h2 {
@@ -136,7 +133,6 @@
     }
   }
 
-
   @media (max-width: $tablet-width) {
     max-width: 230px;
 
@@ -162,7 +158,6 @@
     }
   }
 
-
   @media (max-width: $mobile-width) {
     &:nth-child(2) {
       order: 2;
@@ -175,7 +170,6 @@
     h3 {
       margin-bottom: 4px;
     }
-
   }
 }
 

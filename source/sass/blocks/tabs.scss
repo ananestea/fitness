@@ -96,12 +96,12 @@
 .tabs__controls {
   width: 341px;
   display: grid;
-  grid-template-columns: repeat(3,min-content);
+  grid-template-columns: repeat(3, min-content);
   column-gap: 47px;
   row-gap: 30px;
   margin: 0 auto;
   margin-bottom: 39px;
-  box-shadow: 0 -2px rgba(116,129,156,0.2) inset;
+  box-shadow: 0 -2px rgba(116, 129, 156, 0.2) inset;
 
   @media (max-width: $tablet-width) {
     width: 332px;
@@ -213,7 +213,6 @@
     font-size: 60px;
     line-height: 90px;
     color: $egyptian-blue;
-    margin-bottom: 59px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,7 +239,6 @@
         font-size: 80px;
         line-height: 120px;
       }
-
     }
 
     svg {
@@ -251,7 +249,7 @@
 
   &:hover,
   &:focus-within {
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       top: 0;
@@ -259,7 +257,7 @@
       bottom: 0;
       left: 0;
       border: 7px solid #00359f;
-      border-image: linear-gradient(to right bottom,#d10a42,#00359f);
+      border-image: linear-gradient(to right bottom, #d10a42, #00359f);
       border-image-slice: 1;
       pointer-events: none;
     }
@@ -271,6 +269,7 @@
 
   @media (max-width: $mobile-width) {
     padding: 50px 15px 55px;
+
     h4 {
       font-weight: 700;
       font-size: 22px;

@@ -111,7 +111,6 @@
       font-size: 48px;
       line-height: 46px;
       padding-left: 7px;
-
     }
 
     p {
@@ -183,11 +182,12 @@
   justify-content: center;
   grid-column: 1/3;
   margin-top: 40px;
+  z-index: 1;
 
   &:hover,
   &:focus-within {
-      outline: none;
-      background: $text-red-blue;
+    outline: none;
+    background: $text-red-blue;
   }
 
   &:active {
@@ -212,7 +212,7 @@
   background-color: #010147;
 
   @media (max-width: $mobile-width) {
-    img  {
+    img {
       width: 100%;
     }
   }

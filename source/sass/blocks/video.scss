@@ -77,9 +77,9 @@
     transform: scale(1.1);
   }
 
-    &:active {
-      opacity: 0.5;
-    }
+  &:active {
+    opacity: 0.5;
+  }
 
   &::after {
     position: absolute;
@@ -91,10 +91,8 @@
     background-image: url("../img/svg/video-circle.svg");
     background-position: center;
     background-size: contain;
-    content: "";
     z-index: 1;
   }
-
 
   @media (max-width: $tablet-width) {
     width: 52px;
@@ -110,7 +108,6 @@
       background-image: url("../img/svg/video-circle.svg");
       background-position: center;
       background-size: contain;
-      content: "";
       z-index: 1;
     }
 
