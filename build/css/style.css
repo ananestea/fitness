@@ -3846,14 +3846,14 @@ button,
     width: 100%;
     min-width: 0;
     margin-bottom: 29px;
-    padding: 13px 28px 48px;
+    padding: 18px 28px 26px;
     -webkit-transform: translate(0, 23px);
     -ms-transform: translate(0, 23px);
     transform: translate(0, 23px);
   }
 
   .advantages__item--middle p {
-    margin-bottom: 10px;
+    margin-bottom: 23px;
   }
 
   .advantages__item--side {
