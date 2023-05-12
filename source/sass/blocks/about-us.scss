@@ -26,6 +26,15 @@
   margin-left: 5px;
   margin-top: -6px;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-width) {
     margin-right: 62px;
     margin-top: 8px;
