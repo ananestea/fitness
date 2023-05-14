@@ -2711,7 +2711,7 @@ button,
 .feedback__wrapper {
   margin: 0 auto;
   max-width: 1260px;
-  padding: 11px 45px 122px;
+  padding: 11px 45px 118px;
 }
 
 .feedback__wrapper h2 {
@@ -3400,7 +3400,7 @@ button,
   }
 
   .feedback__wrapper {
-    padding: 23px 45px 98px;
+    padding: 23px 45px 100px;
   }
 
   .feedback__wrapper h2 {
@@ -3416,7 +3416,7 @@ button,
 
   .feedback__item {
     max-width: 566px;
-    padding: 52px 63px 57px;
+    padding: 55px 63px 57px;
   }
 }
 
