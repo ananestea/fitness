@@ -2168,7 +2168,7 @@ button,
   padding: 45px;
   padding-top: 0;
   margin: 0 auto;
-  padding-bottom: 140px;
+  padding-bottom: 137px;
 }
 
 .staff__container h2 {
@@ -2181,7 +2181,7 @@ button,
   color: #102654;
   padding-left: 60px;
   padding-right: 60px;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
 
 .staff__list {
@@ -2194,6 +2194,8 @@ button,
   height: 294px;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .staff__item {
@@ -3270,6 +3272,11 @@ button,
     margin-bottom: 32px;
   }
 
+  .staff__list {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .staff__description-wrapper {
     padding: 52px 44px 25px;
   }
@@ -3811,6 +3818,11 @@ button,
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 43px;
+  }
+
+  .staff__list {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .staff__description-wrapper {
