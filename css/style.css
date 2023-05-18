@@ -1999,9 +1999,7 @@ button,
 
 .video__button:hover,
 .video__button:focus-within {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  zoom: 107%;
 }
 
 .video__button:active {
