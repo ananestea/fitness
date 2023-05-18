@@ -43,7 +43,7 @@
     font-size: 18px;
     line-height: 25px;
     margin: 0;
-    margin-bottom: auto;
+    margin-bottom: 50px;
   }
 
   a {
@@ -58,6 +58,7 @@
     color: $color-default-white;
     width: fit-content;
     border-bottom: 2px solid $color-default-white;
+    margin-top: auto;
 
     &:hover,
     &:focus-within {
@@ -99,5 +100,6 @@
 .offer__image img {
   object-fit: contain;
   width: 100%;
+  height: 100%;
   align-self: center;
 }

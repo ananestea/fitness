@@ -30,6 +30,7 @@
 .navigation__logo {
   place-self: center start;
   grid-column: 1/2;
+  max-height: 31px;
 
   svg {
     @media (max-width: $tablet-width) {

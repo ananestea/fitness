@@ -30,6 +30,7 @@
   max-width: 415px;
   min-width: 200px;
   color: $sapphiret;
+  width: max(266px, min(31vw, 415px));
 
   h2 {
     margin: 0;
@@ -94,6 +95,7 @@
     max-width: 515px;
     margin: 0 auto;
     margin-bottom: 35px;
+    width: unset;
   }
 
   @media (max-width: $mobile-width) {
@@ -103,6 +105,7 @@
     margin: 0;
     margin-bottom: 25px;
     align-self: center;
+    width: unset;
 
     p {
       padding-right: 32px;
@@ -112,9 +115,15 @@
 
 .place__image-wrapper {
   position: relative;
+  max-height: 401px;
+
+  @media (max-width: $tablet-width) {
+    max-height: 100%;
+  }
 
   @media (max-width: $mobile-width) {
     position: unset;
+    max-height: 100%;
   }
 }
 
